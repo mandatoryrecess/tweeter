@@ -18,11 +18,13 @@
   font-size: 2em;
   padding-left: 1.5em;
   padding-top: 1em;
+  padding-bottom: .2em;
   
 }
 
 .nav_write_tweet {
   color: #fff;
+  display: flex;
   font-size: 1.5em;
   padding-right: 1.5em;
   padding-top: 1em;
@@ -32,7 +34,7 @@
 .font_strong_write {
   font-weight: 600;
 }
-.fa-angle-double-down {
+.navArrow {
   color: red;
-  border: red 3px;
-}
+  padding-right: 1.5em;
+ }
