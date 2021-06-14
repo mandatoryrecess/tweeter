@@ -1,0 +1,38 @@
+
+
+
+
+
+.nav_bar_container {
+  min-height: 120px;
+  width: 100%;
+  background-color: #4056A1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.nav_logo_title {
+  font-family: 'Bungee';
+  color: #fff;
+  font-size: 2em;
+  padding-left: 1.5em;
+  padding-top: 1em;
+  
+}
+
+.nav_write_tweet {
+  color: #fff;
+  font-size: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 1em;
+
+}
+
+.font_strong_write {
+  font-weight: 600;
+}
+.fa-angle-double-down {
+  color: red;
+  border: red 3px;
+}
