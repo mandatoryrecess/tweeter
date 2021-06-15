@@ -12,6 +12,7 @@
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -46,8 +47,23 @@
   </header>
 
     <!-- Page-specific (main) content here -->
+
     <main class="container">
-     
-    </main>
-  </body>
+      <section class="new-tweet">
+
+        <!-- <h2>Compose Tweet</h2> -->
+        <span class="pastTweetContainer">     
+        <form id="userSubTweet" class="phantomTweetBox">
+          <span class="error"> </span>          
+          <label  for="tweet-text "></label>   
+          <textarea name="text" id="tweet-text" class="tweet_form" placeholder="What are you humming about?"></textarea>
+          <div>
+            <button class="tweet_button" type="submit">TWEET</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>       
+          </div>
+        </form>        
+    </span>       
+    </section>
+  </main>
+</body>
 </html>

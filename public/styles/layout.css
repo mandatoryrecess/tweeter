@@ -15,8 +15,8 @@ html {
  */
 
 body {
-  color: #545149;
   background-color: #f4f1ec;
+  color: #545149;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -29,35 +29,35 @@ body {
   width: 100%
 }
 .profile_photo_container { 
+  align-items: center;
   display: flex;
-  width: 30rem;
   height: 350px;
   justify-content: center;
-  align-items: center;
+  width: 30rem;
 
 }
 .profile_photo {
   display: flex;
-  width: 15rem;
   height: 15rem;
+  width: 15rem;
 }
 
 .user_name{
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   font-weight: 300px; 
   font-size: 35px;
+  justify-content: center;
   padding-bottom: 50px;
 } 
 
 .user_background_img {
+  align-items: center;
+  background-color: rgb(172, 246, 247); 
+  background-image: url(http://www.transparenttextures.com/patterns/escheresque.png);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background-image: url(http://www.transparenttextures.com/patterns/escheresque.png);
-  background-color: rgb(172, 246, 247); 
 }
 
 
@@ -65,8 +65,45 @@ body {
 
 .container {
   display: flex;
-  width: 100%;
   justify-content: center;
-  padding-right: 5%;
   padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+}
+
+/* Tweet Form  */
+
+.new-tweet {
+  padding-top: 2rem;
+  width: 90%;
+}
+.tweet_form {
+  background-color: #f4f1ec;
+  border-bottom: 5px solid black;
+  border-top: #f4f1ec;
+  border-right: #f4f1ec;
+  border-left: #f4f1ec;
+  display: flex; 
+  font-size: 1.5rem;
+  height: 4rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.tweet_button {
+  background-color: #4056A1;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: "font-family: 'Bungee', sans-serif;";
+  height: 2rem;
+  text-align: center;
+  width: 7rem;
+}
+
+.counter {
+  align-items: right;
+  color: #545149;
+  display: flex; 
+  font-size: 30px;
+  justify-content: flex-end;
 }
