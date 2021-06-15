@@ -73,37 +73,3 @@ body {
 
 /* Tweet Form  */
 
-.new-tweet {
-  padding-top: 2rem;
-  width: 90%;
-}
-.tweet_form {
-  background-color: #f4f1ec;
-  border-bottom: 5px solid black;
-  border-top: #f4f1ec;
-  border-right: #f4f1ec;
-  border-left: #f4f1ec;
-  display: flex; 
-  font-size: 1.5rem;
-  height: 4rem;
-  justify-content: center;
-  width: 100%;
-}
-
-.tweet_button {
-  background-color: #4056A1;
-  border: none;
-  color: rgb(255, 255, 255);
-  font-family: "font-family: 'Bungee', sans-serif;";
-  height: 2rem;
-  text-align: center;
-  width: 7rem;
-}
-
-.counter {
-  align-items: right;
-  color: #545149;
-  display: flex; 
-  font-size: 30px;
-  justify-content: flex-end;
-}
