@@ -92,26 +92,27 @@ body {
     font-size: 5rem;
   }
   .img_profile {
-    height: 5rem;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-bottom: 5%;
+    height: 8rem;
+    margin-top: 2%;
+    margin-left: 5%; 
     width: auto;  
   }
   
   .historical_user_name {
     color: #545149;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
-    padding-top: 10%;
+    margin-top: 5%;
+   
   }
   
   .user_handle {
+   
+    align-self: center;
     color: #545149;
-    justify-content: flex-end;
-    font-size: 20px;
-    padding-top: 3%;
-    margin-left: 40%;
+    align-items: center;
+    font-size: 2rem;
+    padding-left: 45rem; 
   }
   
   .tweetbox_middle {
@@ -158,9 +159,6 @@ body {
     padding-left: 15px;
     color: red;
   }
-  .social_media_icon:hover {
-    color: rgb(240, 137, 10);
-  }
   
   .fa-bell {
     padding-left: 15px;
@@ -176,15 +174,15 @@ body {
   }
 
   .fa-hippo:hover{
-    color: rgb(240, 137, 10);
+    color: rgb(74, 181, 174);
   }
 
   .fa-bell:hover{
-    color:  rgb(240, 137, 10);
+    color:  rgb(74, 181, 174);
   }
 
   .fa-apple-alt:hover{
-    color:  rgb(240, 137, 10);
+    color:  rgb(74, 181, 174);
   }
 
 
