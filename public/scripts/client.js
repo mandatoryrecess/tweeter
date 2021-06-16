@@ -1,4 +1,4 @@
-
+//change header images from b/w to color using mouseover and mouseout event
 function setNewProfileImage(){
   document.getElementById("profile1").src="/images/profile-hex-color.png";
 }
@@ -24,7 +24,7 @@ const createTweetElement = function(tweet) {
         <p class="last_tweet">${safeHTML}</p>
         <hr class="hr"/>
       <footer class="tweetbox_end">
-        <span class="time_of_tweet">${tweet.created_at}</span>
+        <span class="time_of_tweet">${timeago.format(tweet.created_at)}</span>
         <span class="social_media">      
           <a href=''> <i class="fas fa-hippo "></i></a>
           <a href=''> <i class="fas fa-apple-alt"></i> </a>
@@ -35,6 +35,7 @@ const createTweetElement = function(tweet) {
   return $tweet;
 };
 
+//AJAX GET request
 const loadtweets = function() {
   $.get("/tweets", function(data) {
     renderTweets(data);
@@ -42,7 +43,7 @@ const loadtweets = function() {
 };
 
 const renderTweets = function(tweets) {
-  let tweetContainer = $("#articlePastTweets")
+  let tweetContainer = $("#PastTweets")
   tweetContainer.empty()
   for (const tweet of tweets) {
     const $tweetMarkup = createTweetElement(tweet);
@@ -51,7 +52,9 @@ const renderTweets = function(tweets) {
 };
 
 $(document).ready(function() {
+  //call ajax get request loadtweets to immiditly load stashed tweets
   loadtweets();
+  //submit button event for when the user writes a tweet
   $("#userSubTweet").submit(function(event) {
     event.preventDefault();
     const text = $("#tweet-text").val().length;
@@ -69,8 +72,7 @@ $(document).ready(function() {
       errorElement.slideDown('slow');
      
     } else {
-
-      errorElement.slideUp('fast');
+      errorElement.slideUp('fast');     
       $.post("/tweets", $("#tweet-text").serialize(), function() {
   
         loadtweets();

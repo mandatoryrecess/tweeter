@@ -74,9 +74,9 @@ body {
 .past_tweet_container {
   padding-top: 8rem;
 }
-/* .phantom_tweet_box {
+.phantom_tweet_box {
   display: none;
-} */
+}
 
 .article_past_tweets:hover {
   box-shadow: 5px 10px #888888;
@@ -199,4 +199,20 @@ body {
   }
 
 
+/* Pulse for doublearrow */
 
+@keyframes pulse {
+  from { transform: scale(1); }
+  50% { transform: scale(0.85); }
+  to { transform: scale(1); }
+}
+
+.fe-pulse-w-pause {
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.fe-pulse-w-pause:hover,
+.fe-pulse-w-pause:focus {
+  animation-name: unset;
+}
