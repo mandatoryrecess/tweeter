@@ -8,7 +8,7 @@
     "content": {
       "text": "If I have seen further it is by standing on the shoulders of giants"
     },
-    "created_at": 1623696092860
+    "created_at": 1623701753299
   },
   {
     "user": {
@@ -19,14 +19,6 @@
     "content": {
       "text": "Je pense , donc je suis"
     },
-    "created_at": 1623782492860
+    "created_at": 1623788153299
   }
 ]
-
-
-const $tweet = createTweetElement(tweetData);
-
-// Test / driver code (temporary)
-console.log($tweet); // to see what it looks like
-$('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
-Once implemented correctly, the exact same tweet component should be rendered into the tweets container, with
