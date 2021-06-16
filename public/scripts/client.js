@@ -1,13 +1,4 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
 
-
-$("profile_photo").mouseover(function(){
-  $("profile_photo").css("background-color", "yellow");
-});
 function setNewProfileImage(){
   document.getElementById("profile1").src="/images/profile-hex-color.png";
 }
@@ -22,30 +13,32 @@ const escape = function(str) {
 };
 
 const createTweetElement = function(tweet) {
-  const safeHTML = `<span class="tweetbox-middle lastTweet">${escape(tweet.content.text)}</span>`;
+  const safeHTML = `<span class="tweetbox_middle last_tweet">${escape(tweet.content.text)}</span>`;
   let $tweet = $(`
-
-  <section class="articlePastTweets a">
-
-          <div class="hide tweetbox-header" >
-            <img class="imgProfile" src="${tweet.user.avatars}">
-           <span class="historicalUserName">${tweet.user.name}</span>
-           <span class="userHandle">${tweet.user.handle}</span>
-        </div>
-        
-          ${safeHTML}
-          <hr class="hr"/>
-        </span>
-        <span class="tweetbox-end">
-          <span class="timeOfTweet">${tweet.created_at}</span>
-          <span class="socialMedia">      
-            <a href=''> <i class="fas fa-hippo "></i></a>
-            <a href=''> <i class="fas fa-apple-alt"></i> </a>
-            <a href=''> <i class="fas fa-bell"></i></a>
-          </span>           
-          </span>     
-      </section>`);
+      <article class="article_past_tweets">
+      <header class="hide tweetbox_header" >
+        <img class="img_profile" src="${tweet.user.avatars}">
+        <span class="historical_user_name">${tweet.user.name}</span>
+        <div class="user_handle">${tweet.user.handle}</div>
+      </header>
+        <p class="last_tweet">${safeHTML}</p>
+        <hr class="hr"/>
+      <footer class="tweetbox_end">
+        <span class="time_of_tweet">${tweet.created_at}</span>
+        <span class="social_media">      
+          <a href=''> <i class="fas fa-hippo "></i></a>
+          <a href=''> <i class="fas fa-apple-alt"></i> </a>
+          <a href=''> <i class="fas fa-bell"></i></a>
+        </span>           
+      </footer>     
+    </article>`);
   return $tweet;
+};
+
+const loadtweets = function() {
+  $.get("/tweets", function(data) {
+    renderTweets(data);
+  });
 };
 
 const renderTweets = function(tweets) {
@@ -55,12 +48,6 @@ const renderTweets = function(tweets) {
     const $tweetMarkup = createTweetElement(tweet);
     tweetContainer.prepend($tweetMarkup);
   }
-};
-
-const loadtweets = function() {
-  $.get("/tweets", function(data) {
-    renderTweets(data);
-  });
 };
 
 $(document).ready(function() {
@@ -85,7 +72,7 @@ $(document).ready(function() {
 
       errorElement.slideUp('fast');
       $.post("/tweets", $("#tweet-text").serialize(), function() {
-      
+  
         loadtweets();
       });
       $("#userSubTweet").trigger('reset')
