@@ -62,7 +62,6 @@ body {
 
 
 /* Main  */
-
 .container {
   display: flex;
   justify-content: center;
@@ -71,5 +70,122 @@ body {
   width: 100%;
 }
 
-/* Tweet Form  */
+/* HISTORICAL TWEETS */
+.past_tweet_container {
+  padding-top: 8rem;
+}
+/* .phantom_tweet_box {
+  display: none;
+} */
+
+.article_past_tweets:hover {
+  box-shadow: 5px 10px #888888;
+}
+.article_past_tweets {
+  border: 2px solid #373535; 
+  border-spacing: 5rem;
+  margin-bottom: 20px;
+  }
+
+  .tweetbox_header {
+    display: flex;
+    font-size: 5rem;
+  }
+  .img_profile {
+    height: 5rem;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    width: auto;  
+  }
+  
+  .historical_user_name {
+    color: #545149;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 10%;
+  }
+  
+  .user_handle {
+    color: #545149;
+    justify-content: flex-end;
+    font-size: 20px;
+    padding-top: 3%;
+    margin-left: 40%;
+  }
+  
+  .tweetbox_middle {
+    height: 25rem;
+  }
+  .tweetbox_end {
+    height: 10rem;
+    
+  }
+  .last_tweet {
+    align-self: auto;
+    color: #545149;
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 5%;
+    padding-left: 5%;
+  }
+  
+  .hr {
+    border: 5px inset;  
+    color: #131311;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  
+  .time_of_tweet {
+    justify-content: flex-start;
+    color: #545149;
+    font-size: 20px;
+    padding-top: 3%;
+    padding-left: 6%;
+  }
+
+  .social_media {
+    color: #545149;
+    display: flex;
+    justify-content: flex-end;   
+    padding-bottom: 3%; 
+    padding-right: 5%; 
+  }
+
+  .social_media_icon{
+    padding-left: 15px;
+    color: red;
+  }
+  .social_media_icon:hover {
+    color: rgb(240, 137, 10);
+  }
+  
+  .fa-bell {
+    padding-left: 15px;
+    color: red;
+  }
+  .fa-hippo {
+    padding-left: 15px;
+    color: red;
+  }
+  .fa-apple-alt {
+    padding-left: 15px;
+    color: red;
+  }
+
+  .fa-hippo:hover{
+    color: rgb(240, 137, 10);
+  }
+
+  .fa-bell:hover{
+    color:  rgb(240, 137, 10);
+  }
+
+  .fa-apple-alt:hover{
+    color:  rgb(240, 137, 10);
+  }
+
+
 

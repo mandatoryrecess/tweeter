@@ -50,12 +50,11 @@
 
     <main class="container">
       <section class="new-tweet">
-
-        <!-- <h2>Compose Tweet</h2> -->
-        <span class="pastTweetContainer">     
-        <form id="userSubTweet" class="phantomTweetBox">
+      <span class="past_tweet_container">     
+        
+        <form id="userSubTweet" class="phantom_tweet_box">
           <span class="error"> </span>          
-          <label  for="tweet-text "></label>   
+          <label  for="tweet-text "></label>  
           <textarea name="text" id="tweet-text" class="tweet_form" placeholder="What are you humming about?"></textarea>
           <div>
             <button class="tweet_button" type="submit">TWEET</button>
@@ -63,9 +62,27 @@
           </div>
         </form>        
     </span>       
+   
+    <span class="tweetbox_middle last_tweet"></span>
+
+  <section class="article_past_tweets">
+          <div class="hide tweetbox_header" >
+            <img class="img_profile" src="images/profile-hex.png">
+           <span class="historical_user_name">Bob Baily</span>
+           <span class="user_handle">@bobBaily</span>
+        </div>
+          <hr class="hr"/>
+        </span>
+        <span class="tweetbox_end">
+          <span class="time_of_tweet">10 days</span>
+          <span class="social_media">      
+            <a href=''> <i class="fas fa-hippo "></i></a>
+            <a href=''> <i class="fas fa-apple-alt"></i> </a>
+            <a href=''> <i class="fas fa-bell"></i></a>
+          </span>           
+          </span>     
+      </section>
     </section>
   </main>
 </body>
-<!-- External JS -->
-
 </html>
