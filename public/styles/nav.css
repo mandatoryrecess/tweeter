@@ -30,7 +30,11 @@
   font-size: 1.5em;
   padding-right: 1.5em;
   padding-top: 1em;
+}
 
+.nav_write_tweet:hover {
+  color: rgb(245, 18, 18);
+  cursor: pointer;
 }
 
 .font_strong_write {
@@ -40,6 +44,7 @@
   color: red;
   font-size: 1.3em;
   padding-left: 3.7em;
+  animation: updown 2s ease infinite;
  }
 
  .navHeadSpace {
