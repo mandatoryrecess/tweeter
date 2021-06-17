@@ -21,6 +21,12 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.container {
+  display: grid;
+  padding: 0 51px;
+  grid-template-columns: .5fr auto;
+}
+
 /* Header  */
 .header {
   width: 100%
@@ -35,37 +41,29 @@ body {
 }
 .profile_photo {
   display: flex;
-  height: 15rem;
-  width: 15rem;
+  width: 10rem;
+  height: 10rem;
 }
 
 .user_name{
-  align-items: center;
   display: flex;
-  font-weight: 300px; 
-  font-size: 35px;
-  justify-content: center;
-  padding-bottom: 50px;
+  align-items: center;
+  justify-content: center; 
 } 
 
 .user_background_img {
-  align-items: center;
-  background-color: rgb(172, 246, 247); 
-  background-image: url(http://www.transparenttextures.com/patterns/escheresque.png);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 15rem;
+  background-image: url(http://www.transparenttextures.com/patterns/escheresque.png);
+  background-color: rgb(197, 245, 221); 
 }
 
 
 /* Main  */
-.container {
-  display: flex;
-  justify-content: center;
-  padding-left: 5%;
-  padding-right: 5%;
-  width: 100%;
-}
 .mainHeadSpace {
   height: 120px;
 }
@@ -92,9 +90,10 @@ body {
     font-size: 5rem;
   }
   .img_profile {
-    height: 8rem;
-    margin-top: 2%;
-    margin-left: 5%; 
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    height: 5rem;
     width: auto;  
   }
   
@@ -107,18 +106,18 @@ body {
   }
   
   .user_handle {
-    align-self: center;
+    justify-content: flex-end;
     color: #545149;
-    align-items: center;
-    font-size: 1.5rem;
-    padding-left: 40rem; 
+    font-size: 20px;
+    padding-top: 3%;
+    margin-left: 40%;
   }
   
   .tweetbox_middle {
     height: 25rem;
   }
   .tweetbox_end {
-    height: 5rem;
+    height: 8rem;
     
   }
   .last_tweet {
@@ -152,6 +151,7 @@ body {
     justify-content: flex-end;   
     padding-bottom: 3%; 
     padding-right: 5%; 
+    justify-content: flex-end;   
   }
 
   .social_media_icon{
@@ -159,28 +159,28 @@ body {
     color: red;
   }
   
-  .fa-bell {
+  .fa-retweet {
     padding-left: 15px;
     color: red;
   }
-  .fa-hippo {
+  .fa-flag {
     padding-left: 15px;
     color: red;
   }
-  .fa-apple-alt {
+  .fa-heart {
     padding-left: 15px;
     color: red;
   }
 
-  .fa-hippo:hover{
+  .fa-flag:hover{
     color: rgb(74, 181, 174);
   }
 
-  .fa-bell:hover{
+  .fa-retweet:hover{
     color:  rgb(74, 181, 174);
   }
 
-  .fa-apple-alt:hover{
+  .fa-heart:hover{
     color:  rgb(74, 181, 174);
   }
 
@@ -191,9 +191,9 @@ body {
     color: rgb(255, 234, 238);
     margin-bottom: 10px;
     padding: 10px 25px; 
-    max-width: 250px;
-   
+    max-width: 250px;  
   }
+
   .errorStyle {
     background-color: rgb(255, 0, 51);
   }
@@ -245,3 +245,4 @@ body {
   opacity:1;
   
 }
+

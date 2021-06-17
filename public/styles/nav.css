@@ -34,7 +34,8 @@
 }
 
 .nav_write_tweet:hover {
-  color:rgb(205,212,235)
+  color:rgb(255, 255, 130);
+  cursor: pointer;
   
 }
 

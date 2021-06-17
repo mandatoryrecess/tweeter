@@ -13,13 +13,12 @@
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/responsive.css" type="text/css" />
 
     
     <!-- App JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"></script>
-    
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
@@ -42,22 +41,22 @@
     </nav>
     <div class="navHeadSpace"></div>
     <!---Header-->
-    <header class="header">
-        <div class="user_background_img">
-          <div class="profile_photo_container">
+    <main class="container">
+      <header>
+          <div class="profile_photo_container c1">
+            <div class="user_background_img">
               <img id="profile1" class="profile_photo" onmouseover="setNewProfileImage()"
               onmouseout="setOldPforileImage()" 
               src="/images/profile-hex.png"> 
+              <span class="user_name"><strong>Rossanne&nbsp;</strong> Clamp</span>    
           </div>
-          <div class="user_name"><strong>Rossanne&nbsp;</strong> Clamp</div>    
         </div>
-  </header>
-
+      </header>  
+ 
     <!-- Page-specific (main) content here -->
-
-    <main class="container">
-      <section class="new-tweet">
-      <span class="past_tweet_container">     
+  
+    <section class="new-tweet">
+      <span class="past_tweet_container c2">     
         <form id="userSubTweet" class="phantom_tweet_box">
           <span class="error"> </span>          
           <label  for="tweet-text "></label>  
@@ -67,8 +66,7 @@
             <output name="counter" class="counter" for="tweet-text">140</output>     
           </div>
         </form>        
-    </span>   
-    <div class="mainHeadSpace"></div>    
+      </span>   
     <section id="PastTweets"></section>
     <span id="scroll">top<span></span></a>
   </main>

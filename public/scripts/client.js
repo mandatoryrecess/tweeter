@@ -23,14 +23,16 @@ const createTweetElement = function(tweet) {
         <span class="historical_user_name">${tweet.user.name}</span>
         <div class="user_handle">${tweet.user.handle}</div>
       </header>
+      <body>
         <p class="last_tweet">${safeHTML}</p>
         <hr class="hr"/>
+      </body>
       <footer class="tweetbox_end">
         <span class="time_of_tweet">${timeago.format(tweet.created_at)}</span>
         <span class="social_media">      
-          <a href=''> <i class="fas fa-hippo "></i></a>
-          <a href=''> <i class="fas fa-apple-alt"></i> </a>
-          <a href=''> <i class="fas fa-bell"></i></a>
+          <a href=''> <i class="fas fa-flag "></i></a>
+          <a href=''> <i class="fas fa-retweet"></i> </a>
+          <a href=''> <i class="fas fa-heart"></i></a>
         </span>           
       </footer>     
     </article>`);
