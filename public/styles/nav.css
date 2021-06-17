@@ -12,6 +12,7 @@
   justify-content: space-between;
   position: fixed;
   z-index: 10;
+  
 }
 
 .nav_logo_title {
@@ -33,8 +34,8 @@
 }
 
 .nav_write_tweet:hover {
-  color: rgb(245, 18, 18);
-  cursor: pointer;
+  color:rgb(205,212,235)
+  
 }
 
 .font_strong_write {
@@ -49,4 +50,10 @@
 
  .navHeadSpace {
   height: 120px;
+}
+
+
+#dblarrowButton {
+width: 10rem;
+
 }

@@ -6,11 +6,13 @@ function setOldPforileImage(){
   document.getElementById("profile1").src="/images/profile-hex.png";
 }
 
+//cross site scripting using escape function
 const escape = function(str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
+
 
 const createTweetElement = function(tweet) {
   const safeHTML = `<span class="tweetbox_middle last_tweet">${escape(tweet.content.text)}</span>`;
@@ -80,9 +82,29 @@ $(document).ready(function() {
       $("#userSubTweet").trigger('reset')
     }
   });
+  //dbl arrow nav bar click to make tweet form appear
 
   $('#write_a_new_tweet_container').click(function() {
-   $('.phantom_tweet_box').slideDown('slow'); 
+   $('.phantom_tweet_box').slideDown('slow');
+   $('#tweet-text').focus();
   });
+
+  //back-to-top button 
+  //gently fade in and fade out once page at top
+  $(window).scroll(function(){
+    if($(this).scrollTop() > 100){
+        $('#scroll').fadeIn();
+    }else{
+        $('#scroll').fadeOut();
+    }
+});
+//when scroll button clicked, return to top page, slide down the tweet box, place cursor in tweet box
+$('#scroll').click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 600);
+    $('.phantom_tweet_box').slideDown('slow');
+    $('#tweet-text').focus();
+    return false;
 });
 
+
+});

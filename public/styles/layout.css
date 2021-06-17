@@ -215,3 +215,33 @@ body {
     transform: translateY(-10%);
   }
 }
+
+/* backtotopscroll arrow  */
+#scroll {
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  cursor:pointer;
+  width:100px;
+  height:100px;
+  background-color: red;
+  text-indent:-9999px;
+  display:none;
+  border-radius:50%;
+}
+#scroll span {
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-8px;
+  margin-top:-12px;
+  height:0;
+  width:0;
+  border:8px solid transparent;
+  border-bottom-color:#ffffff
+}
+#scroll:hover {
+  background-color:#fa5a5a;
+  opacity:1;
+  
+}
