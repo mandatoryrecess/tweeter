@@ -56,6 +56,7 @@ const renderTweets = function(tweets) {
 };
 
 $(document).ready(function() {
+  $('.phantom_tweet_box').hide();
   //call ajax get request loadtweets to immiditly load stashed tweets
   loadtweets();
   //submit button event for when the user writes a tweet
@@ -86,10 +87,13 @@ $(document).ready(function() {
   });
   //dbl arrow nav bar click to make tweet form appear
 
+
   $('#write_a_new_tweet_container').click(function() {
-   $('.phantom_tweet_box').slideDown('slow');
-   $('#tweet-text').focus();
-  });
+    $('.phantom_tweet_box').toggle('slow');
+    $('#tweet-text').focus();
+  
+});
+
 
   //back-to-top button 
   //gently fade in and fade out once page at top

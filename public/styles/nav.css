@@ -4,13 +4,13 @@
 
 
 .nav_bar_container {
-  min-height: 120px;
-  width: 100%;
+  align-items: flex-start;
   background-color: #4056A1;
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
+  min-height: 120px;
   position: fixed;
+  width: 100%;
   z-index: 10;
   
 }
@@ -18,19 +18,18 @@
 .nav_logo_title {
   font-family: 'Bungee';
   color: #fff;
-  font-size: 2em;
+  font-size: 2.5rem;
   padding-left: 1.5em;
-  padding-top: 1em;
-  padding-bottom: .2em;
+  padding-top: 2rem;
   
 }
 
 .nav_write_tweet {
   color: #fff;
   display: flex;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   padding-right: 1.5em;
-  padding-top: 1em;
+  padding-top: 2rem;
 }
 
 .nav_write_tweet:hover {
